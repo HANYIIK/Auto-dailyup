@@ -9,7 +9,6 @@ os_name = platform.system()
 def replace_char(s, len_pwd):
     """
     强行对密码所在内存地址进行编辑。用于增强对密码的隐私保护功能。
-    （python没有指针，真的是好难受呀，嘤嘤嘤～）
     输入值： 字符串、修改的位置
     返回值： 0
     """
@@ -32,7 +31,7 @@ def clearWindow():
     elif os_name == 'Linux':
         os.system("clear")
     else:
-        print("检测到您是Mac系统，暂时无法实现清屏功能哦。")
+        print("检测到您是Mac系统，暂时无法实现清屏功能哦~")
 
 def getNowHourMinSec():
     """
