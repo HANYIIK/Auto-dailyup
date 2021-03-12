@@ -33,7 +33,7 @@ screen
 python index.py
 ```
 按住`Ctrl`+`A`键后，再按一个`D`键，即可将该窗口`detach`掉，然后你就看不见它了。<br>
-关于如何唤醒这个`screen`:
+<br>关于如何唤醒这个`screen`:
 ```
 screen -ls
 ```
