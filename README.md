@@ -16,6 +16,30 @@ pip3 install requests -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 python index.py
 ```
-然后根据提示输入学号、位置、密码即可，第一次登录成功后无需再次输入密码。<br>
-如果后期更改了密码，建议删除`data/cookie.inf`文件，重新运行。<br>
-###### 特别提醒：Mac系统第一次登录后无法实现清屏功能，为防止明文密码暴露，建议`Ctrl+C`停止一下，再重新`python index.py`即可隐藏密码。
+然后根据提示输入学号、位置、密码，在后台挂着不管它就行了。<br>
+第一次登录成功后无需再次输入密码，如果后期更改了密码，建议删除`data/cookie.inf`文件，重新运行即可。<br>
+##### 特别提醒：Mac系统第一次登录后无法实现清屏功能，为防止明文密码暴露，建议`Ctrl+C`停止一下，再重新`python index.py`即可隐藏密码。
+<br>
+### 关于Linux用户如何实现眼不见心不烦：
+如果觉得终端一直挂在那里很烦的话，建议安装一个后台分屏软件`screen`
+```
+pip install screen
+```
+安装好后进入screen模式：
+```
+screen
+```
+按回车确认
+```
+python index.py
+```
+开始运行后，按住`Ctrl`+`A`键后，再按一个`D`键，把该窗口`detach`掉，然后就可以不管了。<br>
+关于唤醒这个`screen`:
+```
+screen -ls
+```
+找到该`screen`的`id`号 `xxxxx`后：
+```
+screen -r xxxxx
+```
+即可。
