@@ -59,7 +59,7 @@ if __name__ == '__main__':
                 if UPLOAD.upload_ncov_message(cookie, config):
                     time.sleep(180)
                     if UPLOAD.upload_ncov_message(cookie, config):
-                        print("连续尝试了3次都上报失败啦，嘤～")
+                        print("连续尝试了3次都上报失败了，看来你已经自己填过了。")
             # 上报结束之后的冷却时间
             time.sleep(cd_time)
         elif currentState == 4:
