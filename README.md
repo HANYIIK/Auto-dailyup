@@ -14,7 +14,7 @@ Linux系统：
 pip3 install requests -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 ```
-python index.py
+python3 index.py
 ```
 然后根据提示输入学号、位置、密码，在后台挂着不管它就行了。<br>
 第一次登录成功后无需再次输入密码，如果后期更改了密码，建议删除`data/cookie.inf`文件，重新运行即可。<br>
