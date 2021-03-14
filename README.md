@@ -21,7 +21,7 @@ python3 index.py
 ##### 特别提醒 1：Mac系统第一次登录后无法实现清屏功能，为防止明文密码暴露，建议`Ctrl+C`停止一下，再重新`python index.py`即可隐藏密码。
 ##### 特别提醒 2：位置信息建议选`4：美国加利福尼亚州洛杉矶`，可以感受一下被校领导关心的感觉。
 
-### 运行流程图：
+### 运行截图：
 ![image](https://github.com/HANYIIK/Auto-dailyup/blob/main/images/1.jpg)
 ![image](https://github.com/HANYIIK/Auto-dailyup/blob/main/images/2.jpg)
 #### 终端每天正常的输出结果：
