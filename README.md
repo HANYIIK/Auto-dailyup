@@ -20,6 +20,12 @@ python3 index.py
 第一次登录成功后无需再次输入密码，如果后期更改了密码，建议删除`data/cookie.inf`文件，重新运行即可。<br>
 ##### 特别提醒①：Mac系统第一次登录后无法实现清屏功能，为防止明文密码暴露，建议`Ctrl+C`停止一下，再重新`python index.py`即可隐藏密码。
 ##### 特别提醒②：位置信息建议选`4：美国加利福尼亚州洛杉矶`，可以感受一下被校领导关心的感觉。
+
+### 运行流程图：
+![image](https://github.com/HANYIIK/Auto-dailyup/blob/main/images/1.jpg)
+![image](https://github.com/HANYIIK/Auto-dailyup/blob/main/images/2.jpg)
+#### 终端正常的输出结果：
+![image](https://github.com/HANYIIK/Auto-dailyup/blob/main/images/3.jpg)
 * ### 关于Linux和Mac用户如何实现眼不见心不烦：
 如果觉得终端一直挂在那里很烦的话，建议安装一个后台分屏软件`screen`:
 ```
