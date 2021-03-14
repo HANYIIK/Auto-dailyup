@@ -1,5 +1,5 @@
 # 西安电子科技大学(包含广州研究院)晨午晚检自动填报工具
-本代码来自 [/jiang-du/Auto-dailyup.git](https://github.com/jiang-du/Auto-dailyup.git) 的作品，在此基础上增加了`广州研究院`的填报位置信息。<br>
+本代码来自 [jiang-du/Auto-dailyup.git](https://github.com/jiang-du/Auto-dailyup.git) 的作品，在此基础上增加了`广州研究院`的填报位置信息。<br>
 感谢大佬们的无私奉献，本代码仅供学术交流。
 ### 使用方法如下：
 Windows系统：
