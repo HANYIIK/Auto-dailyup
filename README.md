@@ -24,7 +24,7 @@ python3 index.py
 ### 运行流程图：
 ![image](https://github.com/HANYIIK/Auto-dailyup/blob/main/images/1.jpg)
 ![image](https://github.com/HANYIIK/Auto-dailyup/blob/main/images/2.jpg)
-#### 终端正常的输出结果：
+#### 终端每天正常的输出结果：
 ![image](https://github.com/HANYIIK/Auto-dailyup/blob/main/images/3.jpg)
 * ### 关于Linux和Mac用户如何实现眼不见心不烦：
 如果觉得终端一直挂在那里很烦的话，建议安装一个后台分屏软件`screen`:
