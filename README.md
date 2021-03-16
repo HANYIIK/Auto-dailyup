@@ -29,7 +29,7 @@ python3 index.py
 * ### 关于Linux和Mac用户如何实现眼不见心不烦：
 如果觉得终端一直挂在那里很烦的话，建议安装一个后台分屏软件`screen`:
 ```
-pip install screen
+sudo apt-get install screen
 ```
 安装好后进入screen模式：
 ```
