@@ -110,7 +110,7 @@ def getInfo():
         assert int(config["stuNum"], base=10)
 
     if not config["Location"]:
-        config["Location"] = input("选择想定位的地点：1：南校区，2：北校区，3：广研院，4: 美国加利福尼亚州洛杉矶 按回车键结束：")
+        config["Location"] = input("选择想定位的地点：1：北校区，2：南校区，3：广研院，4: 美国加利福尼亚州洛杉矶 按回车键结束：")
 
     if not(os.path.exists(COOKIE_FILE_NAME)):
         if not config["passWord"]:
