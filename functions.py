@@ -3,6 +3,24 @@ import random
 import requests
 import os
 import platform
+import urllib.request
+
+#获取代理
+def get_proxy_():
+    proxy=urllib.request.getproxies() #获取代理
+    if len(proxy) != 0:
+        proxies = {
+            "http": proxy['http'],
+            "https": proxy['https'].replace('https','http')
+        }
+        return proxies
+
+    else:
+        proxies = {
+            "http": None,
+            "https": None
+        }
+        return proxies
 
 os_name = platform.system()
 
@@ -90,7 +108,7 @@ def checkTime(time_lib):
 
 def checkInternetConnection():
     try:
-        requests.get("https://xxcapp.xidian.edu.cn/site/ncov/xisudailyup", timeout=5)
+        requests.get("https://xxcapp.xidian.edu.cn/site/ncov/xisudailyup", timeout=5, proxies=get_proxy_())
     except:
         return False
     return True
