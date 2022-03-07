@@ -2,6 +2,24 @@ import pickle
 import requests
 import os
 import json
+import urllib.request
+
+#获取代理
+def get_proxy_():
+    proxy=urllib.request.getproxies() #获取代理
+    if len(proxy) != 0:
+        proxies = {
+            "http": proxy['http'],
+            "https": proxy['https'].replace('https','http')
+        }
+        return proxies
+
+    else:
+        proxies = {
+            "http": None,
+            "https": None
+        }
+        return proxies
 
 DEFAULT_HEADER = {
     "Accept": "application/json, text/plain, */*",
@@ -41,7 +59,7 @@ def get_cookie_from_login(student_id: str, password: str, cookie_file_path=COOKI
     :param cookie_file_path: cookies文件路径
     :return: cookie文件
     """
-    r = requests.post(LOGIN_URL, data={"username": student_id, "password": password}, headers=DEFAULT_HEADER)
+    r = requests.post(LOGIN_URL, data={"username": student_id, "password": password}, headers=DEFAULT_HEADER, proxies=get_proxy_())
     if r.status_code == 200:
         # 登录成功
         if r.json()['e'] == 0:

@@ -20,7 +20,24 @@
 @Version     : 0.1-dev
 """
 import requests
+import urllib.request
 
+#获取代理
+def get_proxy_():
+    proxy=urllib.request.getproxies() #获取代理
+    if len(proxy) != 0:
+        proxies = {
+            "http": proxy['http'],
+            "https": proxy['https'].replace('https','http')
+        }
+        return proxies
+
+    else:
+        proxies = {
+            "http": None,
+            "https": None
+        }
+        return proxies
 
 DEFAULT_HEADER = {
     "Accept": "application/json, text/plain, */*",
@@ -124,7 +141,7 @@ def upload_ncov_message(cookie, config):
     header = DEFAULT_HEADER
     upload_message = get_upload_msg(config)
     print("您当前的地点：" + upload_message["address"])
-    r = requests.post(UPLOAD_URL, cookies=cookie, headers=header, data=upload_message)
+    r = requests.post(UPLOAD_URL, cookies=cookie, headers=header, data=upload_message, proxies=get_proxy_())
     # 上报成功
     if r.json()['e'] == 0:
         print("上报成功(^_^)")
