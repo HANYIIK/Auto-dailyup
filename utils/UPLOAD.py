@@ -53,7 +53,7 @@ DEFAULT_HEADER = {
 # 填报网址
 UPLOAD_URL = "https://xxcapp.xidian.edu.cn/xisuncov/wap/open-report/save"
 
-# 北校区上传信息
+# 北校区 上传信息
 NORTH_UPLOAD_MSG = {
     "sfzx": "1",  # 是否在校(0->否, 1->是)
     "tw": "1",  # 体温 (36℃->0, 36℃到36.5℃->1, 36.5℃到36.9℃->2, 36.9℃到37℃.3->3, 37.3℃到38℃->4, 38℃到38.5℃->5,
@@ -65,7 +65,7 @@ NORTH_UPLOAD_MSG = {
     "geo_api_info": "{\"type\":\"complete\",\"info\":\"SUCCESS\",\"status\":1,\"VDa\":\"jsonp_324977_\","
                     "\"position\":{\"Q\":34.23254,\"R\":108.91516000000001,\"lng\":108.91802,\"lat\":34.23231},"
                     "\"message\":\"Get ipLocation success.Get address success.\",\"location_type\":\"ip\","
-                    "\"accuracy\":null,\"isConverted\":true,\"addressComponent\":{\"citycode\":\"029\","
+                    "\"accuracy\":null,\"isConverted\":true,\"addressComponent\":{\"citycode\":\"61010\","
                     "\"adcode\":\"610113\",\"businessAreas\":[],\"neighborhoodType\":\"\",\"neighborhood\":\"\","
                     "\"building\":\"\",\"buildingType\":\"\",\"street\":\"白沙路\",\"streetNumber\":\"238号\","
                     "\"country\":\"中国\",\"province\":\"陕西省\",\"city\":\"西安市\",\"district\":\"雁塔区\","
@@ -77,7 +77,7 @@ NORTH_UPLOAD_MSG = {
     "address": "陕西省西安市雁塔区电子城街道西安电子科技大学北校区"  # 实际地址
 }
 
-# 南校区上传信息
+# 南校区 上传信息
 SOUTH_UPLOAD_MSG = {
     "sfzx": "1",  # 是否在校(0->否, 1->是)
     "tw": "1",
@@ -90,7 +90,7 @@ SOUTH_UPLOAD_MSG = {
     "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":34.121994628907,\"R\":108.83715983073,"
                     "\"lng\":108.83716,\"lat\":34.121995},\"location_type\":\"html5\",\"message\":\"Get ipLocation "
                     "failed.Get geolocation success.Convert Success.Get address success.\",\"accuracy\":65,"
-                    "\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"029\","
+                    "\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"61010\","
                     "\"adcode\":\"610116\",\"businessAreas\":[],\"neighborhoodType\":\"\",\"neighborhood\":\"\","
                     "\"building\":\"\",\"buildingType\":\"\",\"street\":\"雷甘路\",\"streetNumber\":\"264号\","
                     "\"country\":\"中国\",\"province\":\"陕西省\",\"city\":\"西安市\",\"district\":\"长安区\","
@@ -102,7 +102,7 @@ SOUTH_UPLOAD_MSG = {
     "address": "陕西省西安市长安区兴隆街道西安电子科技大学长安校区行政辅楼",  # 实际地址
 }
 
-# 广研院上传信息
+# 广州研究院 上传信息
 GZ_UPLOAD_MSG = {
     "sfzx": "1",  # 是否在校(0->否, 1->是)
     "tw": "1",
@@ -115,7 +115,7 @@ GZ_UPLOAD_MSG = {
     "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":23.393325923617535,\"R\":113.49440818443395,"
                     "\"lng\":113.49441,\"lat\":23.39333},\"location_type\":\"html5\",\"message\":\"Get ipLocation "
                     "failed.Get geolocation success.Convert Success.Get address success.\",\"accuracy\":65,"
-                    "\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"020\","
+                    "\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"4401\","
                     "\"adcode\":\"440112\",\"businessAreas\":[],\"neighborhoodType\":\"\",\"neighborhood\":\"\","
                     "\"building\":\"\",\"buildingType\":\"\",\"street\":\"凤凰一横路\",\"streetNumber\":\"313号\","
                     "\"country\":\"中国\",\"province\":\"广东省\",\"city\":\"广州市\",\"district\":\"黄埔区\","
@@ -127,6 +127,30 @@ GZ_UPLOAD_MSG = {
     "address": "广东省广州市黄埔区九佛街道中新广州知识城",  # 实际地址
 }
 
+# 杭州研究院 上传信息
+HZ_UPLOAD_MSG = {
+    "sfzx": "1",  # 是否在校(0->否, 1->是)
+    "tw": "1",
+    # 体温 (36℃->0, 36℃到36.5℃->1, 36.5℃到36.9℃->2, 36.9℃到37℃.3->3, 37.3℃到38℃->4, 38℃到38.5℃->5, 38.5℃到39℃->6, 39℃到40℃->7,
+    # 40℃以上->8)
+    "sfcyglq": "0",  # 是否处于隔离期? (0->否, 1->是)
+    "sfyzz": "0",  # 是否出现乏力、干咳、呼吸困难等症状？ (0->否, 1->是)
+    "qtqk": "",  # 其他情况 (文本)
+    "askforleave": "0",  # 是否请假外出? (0->否, 1->是)
+    "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":30.241904123617535,\"R\":120.3283711443395,"
+                    "\"lng\":120.328371,\"lat\":30.241904},\"location_type\":\"html5\",\"message\":\"Get ipLocation "
+                    "failed.Get geolocation success.Convert Success.Get address success.\",\"accuracy\":65,"
+                    "\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"3301\","
+                    "\"adcode\":\"330109\",\"businessAreas\":[],\"neighborhoodType\":\"\",\"neighborhood\":\"\","
+                    "\"building\":\"\",\"buildingType\":\"\",\"street\":\"钱农东路\",\"streetNumber\":\"8号\","
+                    "\"country\":\"中国\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"district\":\"萧山区\","
+                    "\"township\":\"经济技术开发区\"},\"formattedAddress\":\"浙江省杭州市萧山区经济技术开发区钱农东路8号西安电子科技大学杭州研究院\",\"roads\":[],"
+                    "\"crosses\":[],\"pois\":[],\"info\":\"SUCCESS\"}",
+    "area": "浙江省 杭州市 萧山区",  # 地区
+    "city": "杭州市",  # 城市
+    "province": "浙江省",  # 省份
+    "address": "浙江省杭州市萧山区经济技术开发区西安电子科技大学杭州研究院",  # 实际地址
+}
 
 
 # master
@@ -156,19 +180,27 @@ def upload_ncov_message(cookie, config):
 # branch
 def get_upload_msg(config):
     """
-    位置三选一
+    位置四选一
     :param config: 得到位置信息
     :return: 提交的内容
     """
     location = config["Location"]
     if location == "1":
-        upload_msg = NORTH_UPLOAD_MSG
+        upload_msg = NORTH_UPLOAD_MSG   # 北校区
+
     elif location == "2":
-        upload_msg = SOUTH_UPLOAD_MSG
+        upload_msg = SOUTH_UPLOAD_MSG   # 南校区
+
     elif location == "3":
-        upload_msg = GZ_UPLOAD_MSG
+        upload_msg = GZ_UPLOAD_MSG      # 广州研究院
+
     elif location == "4":
+        upload_msg = HZ_UPLOAD_MSG      # 杭州研究院
+
+    elif location == "5":
         raise RuntimeError("？请认真选择位置")
+
     else:
         raise RuntimeError("未选择位置信息")
+
     return upload_msg
